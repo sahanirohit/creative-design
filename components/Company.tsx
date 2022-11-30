@@ -18,7 +18,7 @@ const companyLogo = [
 
 const Company = () => {
   return (
-    <section className="max-w-7xl mx-auto flex items-center justify-evenly py-8">
+    <section className="max-w-7xl mx-auto flex items-center h-full w-full px-6 lg:px-0 flex-wrap gap-4 justify-evenly py-8">
       {companyLogo.map((logo, index) => {
         return (
           <div className="w-28 h-full" key={index}>

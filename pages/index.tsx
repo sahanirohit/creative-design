@@ -4,8 +4,11 @@ import Image from "next/image";
 import { Fragment } from "react";
 import About from "../components/About";
 import Company from "../components/Company";
+import Connect from "../components/Connect";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
+import Services from "../components/Services";
 
 const Home: NextPage = () => {
   return (
@@ -26,6 +29,15 @@ const Home: NextPage = () => {
 
       {/* About */}
       <About />
+
+      {/* Services */}
+      <Services />
+
+      {/* Let's Connect */}
+      <Connect />
+
+      {/* Footer */}
+      <Footer />
     </Fragment>
   );
 };
