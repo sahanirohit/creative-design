@@ -1,12 +1,15 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import { Fragment } from "react";
+import About from "../components/About";
+import Company from "../components/Company";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 
 const Home: NextPage = () => {
   return (
-    <div className="">
+    <Fragment>
       <Head>
         <title>Creative Design - Landing Page</title>
         <link rel="icon" href="/favicon.ico" />
@@ -17,7 +20,13 @@ const Home: NextPage = () => {
 
       {/* Hero Section */}
       <Hero />
-    </div>
+
+      {/* Company */}
+      <Company />
+
+      {/* About */}
+      <About />
+    </Fragment>
   );
 };
 

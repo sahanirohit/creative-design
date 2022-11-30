@@ -7,3 +7,6 @@
     @apply bg-gray-50;
   }
 }
+.vector {
+  clip-path: circle(700px at right);
+}

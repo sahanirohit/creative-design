@@ -1,10 +1,13 @@
+import Image from "next/image";
 import React from "react";
+import heroImage from "../public/heroImage.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative">
-      <div className="grid grid-cols-2 max-w-7xl mx-auto px-4 lg:px-0">
-        <div className="flex flex-col h-[32rem] justify-center space-y-6">
+    <section className="relative h-[90vh]">
+      {/* <div className="absolute w-full vector top-0 left-0 h-full bg-gradient-to-tr from-yellow-500 via-emerald-400 to-sky-500"></div> */}
+      <div className="grid grid-cols-2 max-w-7xl mx-auto w-full h-full px-4 lg:px-0">
+        <div className="flex flex-col h-full justify-center space-y-6">
           <h1 className="text-6xl font-semibold max-w-md">
             Creative Design & Experience
           </h1>
@@ -22,6 +25,14 @@ const Hero = () => {
               Sign up
             </button>
           </div>
+        </div>
+        <div className="relative flex items-center h-full w-full">
+          <Image
+            src={heroImage}
+            alt="hero image"
+            priority
+            className="object-contain "
+          />
         </div>
       </div>
     </section>
