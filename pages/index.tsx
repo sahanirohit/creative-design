@@ -21,6 +21,10 @@ const Home: NextPage = () => {
           content="Creative Design - Landing Page"
           key="desc"
         />
+        <meta
+          name="google-site-verification"
+          content="Dr6cM6mm_t_4gnYsBppNTWv9su6n6x20sPC6yXE53uw"
+        />
       </Head>
 
       {/* Hero Section */}
