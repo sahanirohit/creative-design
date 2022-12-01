@@ -39,12 +39,7 @@ const About = () => {
                 key={index}
                 className="flex mt-10 sm:pl-10 md:pl-20 gap-6 max-w-md items-center">
                 <div className="relative h-14 w-14 rounded-full">
-                  <Image
-                    src={item.img}
-                    alt="icons"
-                    className=""
-                    objectFit="contain"
-                  />
+                  <Image src={item.img} alt="icons" />
                 </div>
                 <div className="space-y-2">
                   <h2 className="font-semibold text-xl">{item.title}</h2>
@@ -58,10 +53,9 @@ const About = () => {
           <Image
             src={aboutImage}
             alt="aboutImage"
-            objectFit="cover"
-            className="sm:w-96 w-72 min-h-[24rem] max-w-[24rem] z-[1] transform h-full object-cover skew-x-3 top-0"
+            className="sm:w-96 w-72 min-h-[24rem] max-w-[24rem] z-[1] transform h-full object-cover -rotate-6 top-0"
           />
-          <div className="bg-yellow-400 top-0 z-[-1] transform  h-full sm:w-96 w-72 -skew-x-3 absolute"></div>
+          <div className="bg-yellow-400 top-0 z-[-1] transform  h-full sm:w-96 w-72 rotate-6 absolute"></div>
         </div>
       </div>
     </section>

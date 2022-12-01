@@ -10,7 +10,6 @@ const Connect = () => {
           src={connect}
           alt="contact"
           className="h-96 object-center object-cover"
-          objectFit="cover"
         />
         <div className="w-full h-full bg-gradient-to-l from-black to-transparent absolute top-0"></div>
         <div className="absolute top-0 right-0 left-0 sm:left-auto text-white flex flex-col space-y-4 items-center sm:items-start text-center sm:text-left justify-center h-full">

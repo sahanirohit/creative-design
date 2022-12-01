@@ -65,7 +65,7 @@ const Services = () => {
               className="hover:shadow-2xl max-w-sm mx-auto cursor-pointer px-8 py-8"
               key={index}>
               <div className="relative w-16 bg-white p-2 shadow-sm">
-                <Image src={item.img} alt="icon" objectFit="contain" />
+                <Image src={item.img} alt="icon" />
               </div>
               <div className="mt-8 flex flex-col space-y-4">
                 <h1 className="text-2xl font-semibold">{item.title}</h1>

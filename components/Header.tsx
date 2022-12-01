@@ -38,7 +38,7 @@ const Header = () => {
             <Link href={"/"}>Home</Link>
           </li>
           <li className="px-6 py-1">
-            <Link href={"/"}>Portfolio</Link>
+            <Link href={"/portfolio"}>Portfolio</Link>
           </li>
           <li className="px-6 py-1">
             <Link href={"/"}>How it works</Link>

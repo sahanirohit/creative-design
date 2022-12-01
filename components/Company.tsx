@@ -25,8 +25,7 @@ const Company = () => {
             <Image
               src={logo.img}
               alt="logo"
-              className="filter grayscale-[100] hover:grayscale-0"
-              objectFit="contain"
+              className="filter w-full h-full object-contain grayscale-[100] hover:grayscale-0"
             />
             {/* <img src={`${logo.img}`} alt="" className="" /> */}
           </div>
