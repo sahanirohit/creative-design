@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import React from "react";
 import airbnb from "../public/airbnb.png";
 import google from "../public/google.png";
@@ -19,15 +19,14 @@ const companyLogo = [
 const Company = () => {
   return (
     <section className="max-w-7xl mx-auto flex items-center h-full w-full px-6 lg:px-0 flex-wrap gap-4 justify-evenly py-8">
-      {companyLogo.map((logo, index) => {
+      {companyLogo.map((item, index) => {
         return (
           <div className="w-28 h-full" key={index}>
             <Image
-              src={logo.img}
+              src={item.img}
               alt="logo"
               className="filter w-full h-full object-contain grayscale-[100] hover:grayscale-0"
             />
-            {/* <img src={`${logo.img}`} alt="" className="" /> */}
           </div>
         );
       })}

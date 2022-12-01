@@ -3,16 +3,14 @@ import Image from "next/image";
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 
-import img1 from "../public/Game Dev.jpg";
-import img2 from "../public/Plant Shop.jpg";
+import img1 from "../public/Creative Design - Landing Page.png";
+import img2 from "../public/Rohit Sahani _ UI_UX Designer & Developer.png";
 import img3 from "../public/teacher-portfolio.jpg";
 import img4 from "../public/Village Bank.jpg";
 
 const portfolioImage = [
   { img: img1, href: "/" },
-  { img: img2, href: "/" },
-  { img: img3, href: "/" },
-  { img: img4, href: "/" },
+  { img: img2, href: "https://www.rohitsahani.in/" },
 ];
 
 const portfolio = () => {
@@ -30,7 +28,18 @@ const portfolio = () => {
         {portfolioImage.map((item, index) => {
           return (
             <div className="flex flex-col space-y-4" key={index}>
-              <Image src={item.img} alt="landingPage" className="border" />
+              <div className="h-[36rem] w-full overflow-hidden border relative group">
+                <Image
+                  src={item.img}
+                  alt="landingPage"
+                  className="w-full h-full object-cover z-[-1] object-top group-hover:object-bottom duration-[1s]"
+                />
+                <a
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block bg-transparent z-[1] w-full h-full absolute top-0"></a>
+              </div>
               <a
                 href={item.href}
                 target="_blank"
