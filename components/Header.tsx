@@ -43,9 +43,6 @@ const Header = () => {
           <li className="px-6 py-1">
             <Link href={"/how-it-works"}>How it works</Link>
           </li>
-          <li className="px-6 py-1">
-            <Link href={"/team"}>Team</Link>
-          </li>
         </ul>
         <div className="md:block hidden">
           <button className="px-4 py-2 font-semibold">Login</button>
@@ -67,9 +64,6 @@ const Header = () => {
             </li>
             <li onClick={() => setNavOpen(!navOpen)} className="px-6 py-1">
               <Link href={"/how-it-works"}>How it works</Link>
-            </li>
-            <li onClick={() => setNavOpen(!navOpen)} className="px-6 py-1">
-              <Link href={"/team"}>Team</Link>
             </li>
           </ul>
           <div className="px-6 flex flex-col space-y-2 mt-4 w-full">

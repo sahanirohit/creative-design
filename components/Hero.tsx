@@ -26,7 +26,7 @@ const Hero = () => {
             </button>
           </div>
         </div>
-        <div className="relative flex items-center min-h-[36rem] justify-center w-full">
+        <div className="relative flex items-center min-h-[20rem] md:min-h-[36rem] justify-center w-full">
           <Image
             src={heroImage}
             alt="hero image"
