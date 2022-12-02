@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 
@@ -15,16 +15,16 @@ const portfolioImage = [
 
 const portfolio = () => {
   return (
-    <section className="max-w-7xl mx-auto">
+    <section className="max-w-7xl mx-auto px-6 lg:px-0">
       <Head>
         <title>Creative Design | Portfolio</title>
       </Head>
       <div className="py-16">
-        <h1 className="text-4xl font-[poppins]">
+        <h1 className="sm:text-4xl text-3xl font-[poppins]">
           Here are my some Live projects.
         </h1>
       </div>
-      <div className="grid grid-cols-2 gap-4 pb-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pb-16">
         {portfolioImage.map((item, index) => {
           return (
             <div className="flex flex-col space-y-4" key={index}>
@@ -32,6 +32,8 @@ const portfolio = () => {
                 <Image
                   src={item.img}
                   alt="landingPage"
+                  layout="fill"
+                  placeholder="blur"
                   className="w-full h-full object-cover z-[-1] object-top group-hover:object-bottom duration-[1s]"
                 />
                 <a

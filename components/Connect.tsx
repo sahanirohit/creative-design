@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import React from "react";
 import connect from "../public/connect.jpg";
 
@@ -8,6 +8,7 @@ const Connect = () => {
       <div className="w-full h-96 relative">
         <Image
           src={connect}
+          layout="fill"
           alt="contact"
           className="h-96 object-center object-cover"
         />

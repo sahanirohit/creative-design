@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import React from "react";
 import heroImage from "../public/heroImage.jpg";
 
@@ -26,12 +26,14 @@ const Hero = () => {
             </button>
           </div>
         </div>
-        <div className="relative flex items-center h-full justify-center w-full">
+        <div className="relative flex items-center min-h-[36rem] justify-center w-full">
           <Image
             src={heroImage}
             alt="hero image"
+            layout="fill"
             priority
-            className="object-contain w-96 lg:w-full"
+            placeholder="blur"
+            className="object-contain lg:w-full"
           />
         </div>
       </div>

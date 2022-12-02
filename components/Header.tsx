@@ -41,10 +41,10 @@ const Header = () => {
             <Link href={"/portfolio"}>Portfolio</Link>
           </li>
           <li className="px-6 py-1">
-            <Link href={"/"}>How it works</Link>
+            <Link href={"/how-it-works"}>How it works</Link>
           </li>
           <li className="px-6 py-1">
-            <Link href={"/"}>Team</Link>
+            <Link href={"/team"}>Team</Link>
           </li>
         </ul>
         <div className="md:block hidden">
@@ -59,24 +59,28 @@ const Header = () => {
             navOpen ? "translate-x-0" : "translate-x-full"
           } z-40 py-28 left-0 w-full duration-300 h-full`}>
           <ul className="">
-            <li className="px-6 py-1">
+            <li onClick={() => setNavOpen(!navOpen)} className="px-6 py-1">
               <Link href={"/"}>Home</Link>
             </li>
-            <li className="px-6 py-1">
-              <Link href={"/"}>Portfolio</Link>
+            <li onClick={() => setNavOpen(!navOpen)} className="px-6 py-1">
+              <Link href={"/portfolio"}>Portfolio</Link>
             </li>
-            <li className="px-6 py-1">
-              <Link href={"/"}>How it works</Link>
+            <li onClick={() => setNavOpen(!navOpen)} className="px-6 py-1">
+              <Link href={"/how-it-works"}>How it works</Link>
             </li>
-            <li className="px-6 py-1">
-              <Link href={"/"}>Team</Link>
+            <li onClick={() => setNavOpen(!navOpen)} className="px-6 py-1">
+              <Link href={"/team"}>Team</Link>
             </li>
           </ul>
-          <div className="px-6 flex w-full">
-            <button className="px-4 flex-1 py-2 bg-black text-white rounded-lg font-semibold">
+          <div className="px-6 flex flex-col space-y-2 mt-4 w-full">
+            <button
+              onClick={() => setNavOpen(!navOpen)}
+              className="px-4 flex-1 py-2 bg-black text-white rounded-lg font-semibold">
               Login
             </button>
-            <button className="px-4 py-2 flex-1 bg-blue-500 text-white font-semibold rounded-lg">
+            <button
+              onClick={() => setNavOpen(!navOpen)}
+              className="px-4 py-2 flex-1 bg-blue-500 text-white font-semibold rounded-lg">
               Sign up
             </button>
           </div>
