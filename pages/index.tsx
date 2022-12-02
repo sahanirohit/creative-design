@@ -14,6 +14,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Creative Design - Landing Page</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="robots" content="all" />
         <meta
           name="description"
           content="Creative Design - Landing Page"
